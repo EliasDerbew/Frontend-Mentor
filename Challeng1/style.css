@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  hsl(210, 46%, 95%);
+    max-width: 1440px;
+    margin: 100px auto;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 500px;
+}
+
+.testmonial {
+   margin: 10px;
+   padding: 20px;
+   display: grid;
+   grid-template-columns:repeat(4, 1fr);
+   gap: 30px;
+}
+
+header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card_image {
+    border: skyblue solid 1px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.varification { 
+    opacity: 0.5;
+}
+
+.first_quote {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.second_quote {
+    padding: 10px;
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.person1 {
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    padding: 20px;
+    border-radius: 1rem;
+    background-image: url(webImages/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right top ;
+    grid-column: 1 / span 2;
+    box-shadow: 10px 10px 10px gray;
+    
+}
+.person2 {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px gray;
+     
+}
+.person3 {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    padding: 20px;
+    border-radius: 1rem;
+    grid-row: 2;
+    box-shadow: 10px 10px 10px gray;
+     
+}
+.person4 {
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    padding: 20px;
+    border-radius: 1rem;
+    grid-row: 2;
+    grid-column: 2/ span 2;
+    box-shadow: 10px 10px 10px gray;
+ 
+}
+
+.person5 {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    padding: 20px;
+    border-radius: 1rem;   
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    box-shadow: 10px 10px 10px gray;
+}
+
+@media (max-width: 375px) {
+    .testmonial {
+        margin: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+     }
+     
+}

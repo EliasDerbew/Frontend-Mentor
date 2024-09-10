@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    max-width: 1440px;
+    margin: 10px auto;
+    font-family: 'inter', sans-serif;
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.5;
+}
+
+.img_card {
+    width: 90px;
+    border-radius: 50%;
+    border: steelblue solid 2px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.location {
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+    margin-top: 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 20px;
+}
+
+
+.container {
+    background-color: hsl(0, 0%, 12%);
+    padding: 20px;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600px;  
+    display: block;
+    width: 100%;
+}
+
+
+li {
+    list-style-type: none;
+    margin: 20px;
+    padding: 10px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    width:20rem;
+}
+
+li:hover {
+    background-color: hsl(75, 94%, 57%);
+}
+
+
+li:hover a {
+    color: black;
+}
+
+@media(max-width: 375px){
+
+    .img_card {
+        width: 50px;
+        border-radius: 50%;
+        border: steelblue solid 2px;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    .location {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 11px;
+       
+    }
+
+    li {
+        margin: 15px;
+        padding: 10px;
+        width: 15rem;
+        font-size: 15px;
+    }
+
+    .container {
+        background-color: hsl(0, 0%, 12%);
+        padding: 20px;
+        border-radius: 0.5rem;
+        text-align: center;
+        max-width: 300px
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Different Row Colors</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: left;
+        }
+
+        /* Assign different background colors to each row */
+        tr:nth-child(1) {
+            background-color: lightcoral;
+        }
+
+        tr:nth-child(2) {
+            background-color: lightblue;
+        }
+
+        tr:nth-child(3) {
+            background-color: lightgreen;
+        }
+
+        tr:nth-child(4) {
+            background-color: lightyellow;
+        }
+
+        tr:nth-child(5) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, Cell 1</td>
+            <td>Row 4, Cell 2</td>
+            <td>Row 4, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 5, Cell 1</td>
+            <td>Row 5, Cell 2</td>
+            <td>Row 5, Cell 3</td>
+        </tr>
+    </table>
+
+</body>
+</html>

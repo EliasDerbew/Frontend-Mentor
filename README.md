@@ -26,3 +26,7 @@ _5. challenge 5 (https://nftpreview5.netlify.app/ )_
 _6. challenge 6 (https://qrcode6.netlify.app/ )_
 
 ![desktop-design](https://github.com/user-attachments/assets/b2e5fe8a-e44d-42b5-a707-b93fa25a3e26)
+
+_7. challenge 7 (https://clipboard-landing-page71.netlify.app/ )_
+
+![desktop-preview](https://github.com/user-attachments/assets/772b4dc7-c63f-4cad-9d63-1f11770a5327)

@@ -18,11 +18,11 @@ _3. challenge 3 (https://result-summary3.netlify.app/)_
 _4. challenge 4 (https://product-overview4.netlify.app/ )_ 
             
 ![desktop-design](https://github.com/user-attachments/assets/ff0563a9-2e7f-44c0-a8e8-4ba9205217fe)
-https://github.com/EliasDerbew/Frontend-Mentor/issues/1#issue-2533184116
-I complete challenges from Frontend Mentor to enhance my front-end development skills.
-challenge 1 ( https://testmonial-grid-section.netlify.app/ )
-challenge 2 ( https://social-media-profile1.netlify.app/ )
-challenge 3 (https://result-summary3.netlify.app/)
-challenge 4 (https://product-overview4.netlify.app/ )
-challenge 5 (https://nftpreview5.netlify.app/ )
-challenge 6 (https://qrcode6.netlify.app/ )
+
+_5. challenge 5 (https://nftpreview5.netlify.app/ )_
+
+![desktop-design](https://github.com/user-attachments/assets/7b3e8cf1-30c1-4f0e-b198-ad7112c18916)
+
+_6. challenge 6 (https://qrcode6.netlify.app/ )_
+
+![desktop-design](https://github.com/user-attachments/assets/b2e5fe8a-e44d-42b5-a707-b93fa25a3e26)

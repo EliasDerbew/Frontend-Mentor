@@ -30,3 +30,8 @@ _6. challenge 6 (https://qrcode6.netlify.app/ )_
 _7. challenge 7 (https://clipboard-landing-page71.netlify.app/ )_
 
 ![desktop-preview](https://github.com/user-attachments/assets/772b4dc7-c63f-4cad-9d63-1f11770a5327)
+
+
+_8. challenge 8 (https://fylo-landing-page8.netlify.app/ )_
+
+![desktop-preview](https://github.com/user-attachments/assets/aa136f96-378f-4b8e-ba82-178b06acde4e)

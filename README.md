@@ -35,3 +35,7 @@ _7. challenge 7 (https://clipboard-landing-page71.netlify.app/ )_
 _8. challenge 8 (https://fylo-landing-page8.netlify.app/ )_
 
 ![desktop-preview](https://github.com/user-attachments/assets/aa136f96-378f-4b8e-ba82-178b06acde4e)
+
+_9. challenge 10 ( https://huddle-landing-page9.netlify.app/)_     
+      
+![desktop-preview](https://github.com/user-attachments/assets/3a3c617c-d6d6-4e25-8d2b-690e2b18d07a)

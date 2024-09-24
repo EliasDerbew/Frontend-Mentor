@@ -297,6 +297,44 @@ input {
     cursor: pointer;
 }
 
+@media(max-width: 786px){
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        font-family: "Poppins", sans-serif;
+        color: white;
+        position: relative;
+        background-color:#00252e;
+        margin-top: 300px;
+        padding: 40px 20px;
+        gap: 50px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .custom-shape-divider-bottom-1726813249 {
+        position: absolute;
+        bottom: 555px;
+        left: 0px;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1726813249 svg {
+        position: relative;
+        display: block;
+        width: calc(122% + 1.3px);
+        height: 208px;
+    }
+
+    .custom-shape-divider-bottom-1726813249 .shape-fill {
+        fill: #00252E;
+    }
+}
+
 @media(max-width: 375px){
     header{
         display: flex;
@@ -537,43 +575,7 @@ input {
     }
 }
 
-@media(max-width: 786px){
 
-    footer {
-        display: flex;
-        flex-direction: column-reverse;
-        font-family: "Poppins", sans-serif;
-        color: white;
-        position: relative;
-        background-color:#00252e;
-        margin-top: 300px;
-        padding: 40px 20px;
-        gap: 50px;
-        font-size: 14px;
-        font-weight: 500;
-    }
-
-    .custom-shape-divider-bottom-1726813249 {
-        position: absolute;
-        bottom: 555px;
-        left: 0px;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg);
-    }
-    
-    .custom-shape-divider-bottom-1726813249 svg {
-        position: relative;
-        display: block;
-        width: calc(122% + 1.3px);
-        height: 208px;
-    }
-
-    .custom-shape-divider-bottom-1726813249 .shape-fill {
-        fill: #00252E;
-    }
-}
 
 
 

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    font-family: "Overpass", sans-serif;
+}
+
+.container{
+    max-width: 400px;
+    background-color:hsl(213, 19%, 18%);
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 30px hsl(216, 12%, 8%);
+    color: white; 
+}
+
+.star {
+    width: 35px;
+    height: 35px;
+    background-color: hsl(212, 28%, 9%);
+    border-radius: 50%;
+    border: 2px solid hsl(213, 19%, 18%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.start-image {
+    width: 20px;
+}
+
+.note p {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 20px;
+}
+
+.rating-numbers {
+    display: flex;
+    justify-content: center;
+}
+
+.number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:hsl(213, 24%, 9%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.number:hover{
+    background-color:  hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.number:active {
+    background-color: white;
+    color:black
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px
+}
+
+button {
+    height: 40px;;
+    width: 100%;
+    border-radius: 2rem;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+}
+
+a {
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Overpass", sans-serif;
+    letter-spacing: 3px;
+}
+
+button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+@media(max-width: 375px){
+    .container{
+        max-width: 330px;
+        margin:20px;
+        background-color:hsl(213, 19%, 18%);
+        padding: 20px;
+        border-radius: 1rem;
+        box-shadow: 10px 10px 30px hsl(216, 12%, 8%);
+        color: white; 
+        font-size: 13px;
+    }
+}

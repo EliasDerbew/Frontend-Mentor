@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Manrope", sans-serif;
+    background-color:  hsl(210, 46%, 95%);
+}
+
+.container {
+    display: flex;
+    max-width: 850px;
+    gap: 10px;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+/* right side of the container  */
+
+.image {
+    width: 400px;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+/* the left side of the contianer */
+
+.left-side{
+    display:flex ;
+    flex-direction: column;
+    padding: 40px;
+    align-items: space-around;
+}
+
+.left-side h1{
+    font-size: 20px;
+    color:  hsl(217, 19%, 35%);
+    margin-bottom: 20px;
+}
+
+.left-side p {
+    font-weight: 700;
+    font-size: 13px;
+    color: hsl(217, 19%, 35%);
+    opacity: 0.7;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+footer h2 {
+    font-size: 15px;
+    color:hsl(217, 19%, 35%);
+}
+
+.share {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 16rem;
+    top: -80px;
+}
+
+.sharing-icons {
+    background-color: hsl(210, 46%, 95%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px
+}
+
+.platforms {
+    background-color: hsl(217, 19%, 35%);
+    padding: 15px 30px;
+    color: white;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    letter-spacing:2px ;
+    border-radius: 0.5rem;
+    font-size: 13px;
+    color: hsl(212, 23%, 69%);
+    visibility: hidden;
+}
+
+.triangle {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);
+    visibility: hidden;
+   
+}
+
+.sharing-icons:hover {
+    background-color:  hsl(217, 19%, 35%);
+    cursor: pointer;
+}
+
+.sharing-icons:hover .sharing {
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}
+
+.platforms:hover {
+    cursor: pointer;
+}
+
+.facebook{
+    transition: transform 0.3s ease;
+}
+
+.facebook:hover {
+    transform: scale(0.9);
+}
+.twitter{
+    transition: transform 0.3s ease;
+}
+
+.twitter:hover {
+    transform: scale(0.9);
+}
+.pinterst{
+    transition: transform 0.3s ease;
+}
+
+.pinterst:hover {
+    transform: scale(0.9);
+}
+
+@media(max-width: 375px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 375px;
+        gap: 10px;
+        background-color: white;
+        border-radius: 1rem;
+        width: 375px;
+        margin-left: 20px;
+
+    }
+    
+
+    .image {
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 0rem;
+    }
+
+    footer {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+.share {
+    display: flex;
+    flex-direction: row;
+    margin-left: -300px;
+    margin-bottom:0;
+    width:375px;
+    align-items: center;
+}
+
+.platforms {
+  padding: 30px;
+  padding-right: 175px;
+  margin-top: 78px;
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+
+}
+
+.sharing-icons {
+    margin-left: -59px;
+    margin-top: 60px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.sharing-icons:hover {
+    background-color:  hsl(214, 17%, 51%);
+    cursor: pointer;
+}
+}
+
+
+

@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img, svg {
+    max-width: 100%;
+    display: block;
+}
+
+label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input[type="number"] {
+   width: 100%;
+   padding: 0.25rem 0.5rem;
+   font-weight: 700;
+   border: 0;
+   outline: 0;
+
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.5rem;
+    outline: 2px solid hsl(202, 55%, 16%);
+    border-radius: 50%;
+
+}
+
+input[type="radio"]:checked {
+    background-color: hsl(61, 70%, 52%);
+}
+
+.radio-inputs {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid hsl(203, 41%, 72%);
+}
+
+.radio-inputs > * {
+    cursor: pointer;
+}
+
+.radio-inputs:hover {
+    border: 1px solid hsl(61, 70%, 52%);
+}
+
+.radio-inputs label {
+    margin-bottom: 0;
+}
+
+.radio-inputs.selected {
+    background-color: hsl(61, 71%, 75%);
+    border: 1px solid hsl(61, 70%, 52%);
+}
+
+.radio-inputs.selected input[type='radio'] {
+    outline: 3px solid hsl(61, 70%, 52%);
+}
+
+button {
+    cursor: pointer;
+}
+
+.form-item {
+    margin-bottom: 2rem;
+}
+
+.form-symbol {
+    background-color: hsl(202, 86%, 94%);
+    color: hsl(200, 24%, 40%);
+    padding: 0.5rem 0.75rem;
+    font-weight: 700;
+}
+
+.form-flex {
+    display: flex;
+    border: 1px solid hsl(203, 41%, 72%);
+}
+
+.form-flex:hover {
+    border: 1px solid hsl(202, 55%, 16%);
+}
+
+.form-flex:focus-within .form-symbol {
+    background-color: hsl(61, 70%, 52%);
+    border: 1px solid hsl(61, 70%, 52%);
+}
+
+.form-flex.error {
+    border: 1px solid  hsl(4, 69%, 50%);
+}
+
+.form-flex.error .form-symbol {
+    background-color:  hsl(4, 69%, 50%);
+    color: white;
+}
+
+.form-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+}
+
+.form-col .form-item {
+    margin: 0;
+}
+
+body {
+    background-color: hsl(202, 86%, 94%);
+    min-height: 100vh;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: grid;
+    place-content: center;
+}
+
+.form-alart {
+    color: hsl(4, 69%, 50%);
+    display: none;
+}
+
+.mortgage-calculator {
+    background-color: white;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+
+.mortgage-calculator > * {
+    padding: 2rem;
+}
+
+.mortgage-calculator .left-side {
+    color: hsl(202, 55%, 16%);
+}
+
+.mortgage-calculator .left-side .light-text {
+    color: hsl(200, 24%, 40%);
+    font-weight: 500;
+}
+
+.mortgage-calculator .left-side .header {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mortgage-calculator .left-side .header button {
+    background-color: transparent;
+    color: hsl(200, 26%, 54%);
+    padding: 0.25rem 0.5rem;
+    font-size: 1.15rem;
+    text-decoration: underline;
+    border: 0;
+}
+
+.mortgage-calculator .left-side .header button:hover {
+    color: hsl(202, 55%, 16%);
+}
+
+.mortgage-calculator .left-side .calculate-btn {
+    background-color: hsl(61, 70%, 52%);
+    color: hsl(202, 55%, 16%);
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-radius: 1.5rem;
+}
+
+.mortgage-calculator .left-side .calculate-btn:hover {
+    background-color: hsl(61, 60%, 75%);
+}
+
+.mortgage-calculator .right-side {
+    background-color: hsl(202, 55%, 16%);
+    color: white;
+    border-radius: 0 0 0 4rem;
+}
+
+.mortgage-calculator .right-side .default-text{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.mortgage-calculator .right-side .default-text.hide {
+    display: none;
+}
+
+.mortgage-calculator .right-side .default-text img {
+    margin: auto;
+}
+
+.mortgage-calculator .right-side .default-text h2 {
+    margin-bottom: 1rem;
+}
+
+
+.mortgage-calculator .right-side .calculations-container {
+    display: none;
+}
+
+.mortgage-calculator .right-side .calculations-container.show {
+    display: block;
+}
+
+.mortgage-calculator .right-side .calculations-container .light-text {
+    margin: 1rem 0 2rem;
+}
+
+.mortgage-calculator .right-side .calculations-container .calculations {
+    background-color: hsl(202, 58%, 7%);
+    padding: 1.5rem;
+    border-top: 4px solid  hsl(0, 0%, 100%);
+    border-radius: 1rem;
+}
+
+.mortgage-calculator .right-side .calculations-container .calculations .light-text {
+    margin: 0 0 1rem;
+}
+
+.mortgage-calculator .right-side .calculations-container .calculations .monthly-result {
+    color:  hsl(61, 70%, 52%);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.mortgage-calculator .right-side .calculations-container .calculations .line {
+    background-color:hsl(200, 26%, 54%);
+    width: 100%;
+    height: 1px;
+    margin: 2rem 0;
+    display: block;
+}
+
+.mortgage-calculator .right-side .calculations-container .calculations .term-result {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@media (max-width: 800px) {
+    .mortgage-calculator {
+        margin: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .mortgage-calculator .right-side .default-text {
+        margin-top: 3rem;
+    }
+
+}
+
+@media(max-width: 540px){
+
+    .mortgage-calculator {
+        margin: 0;
+        grid-template-columns: 1fr;
+        border-radius: intial;
+    }
+
+    .mortgage-calculator .left-side .header {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .form-col {
+        grid-template-columns: 1fr;
+    }
+
+    .mortgage-calculator .right-side {
+        border-radius: initial;
+    }
+
+    .mortgage-calculator .left-side .calculate-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+

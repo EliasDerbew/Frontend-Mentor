@@ -12,7 +12,10 @@ body {
     place-content: center;
     margin: 20px;
     margin-bottom: 60px;
-    max-width: 1440px;
+}
+
+.mian-container {
+    max-width: 1200px
 }
 
 header {
@@ -67,6 +70,10 @@ a {
     text-decoration: none;
     color: hsl(236, 13%, 42%);
     cursor: pointer;
+}
+
+a:hover {
+    color:  hsl(35, 77%, 62%);
 }
 
 
@@ -145,7 +152,12 @@ button {
     font-weight: 700;
     letter-spacing: 2.5px;
     cursor: pointer;
+}
 
+button:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    cursor: pointer;
 }
 
 .news-img {

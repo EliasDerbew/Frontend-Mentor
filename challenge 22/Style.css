@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    font-family: "karla", sans-serif;
+    align-items: center;
+    padding: 30px 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(273, 4%, 51%);
+    cursor: pointer;
+}
+
+a:hover {
+    color: hsl(270, 9%, 17%)
+}
+
+#plans {
+    border: 2px solid hsl(270, 9%, 17%);
+    padding: 10px 20px;
+    color: hsl(270, 9%, 17%);
+    
+}
+
+#plans:hover {
+    background-color: hsl(270, 9%, 17%);
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+}
+
+.section-1 {
+    display: flex;
+    align-items: center;
+    background-color:  hsl(256, 26%, 20%);
+    color: white;
+    background-image: url(images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.left-side {
+    padding: 5rem;
+}
+
+.right-side {
+    margin-top: 100px;
+    margin-bottom: -100px;
+   
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 600px;
+}
+
+.section-1 h1 {
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 80px;
+    font-weight: 400;  
+    line-height: 0.8;
+    margin-top: 60px;
+}
+
+
+.section-1 p {
+    font-family: "karla", sans-serif;
+    font-weight: 400;
+}
+
+.viewplans {
+    height: 40px;
+    width: 200px;
+    padding: 0 20px;
+    font-family: "karla", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white; 
+    cursor: pointer;
+}
+
+.viewplans:hover {
+    background-color: white;
+    color:black;
+}
+
+.horizontal-line {
+    height: 1.5px;
+    width: 200px;
+    background-color: white;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 100px;
+}
+
+.section-2 img {
+    width: 100px;
+}
+
+.section-2 p {
+    font-family: "karla", sans-serif;
+    font-weight: 500;
+    color: hsl(270, 9%, 17%);
+}
+
+.section-2 h1 {
+    align-self: start;
+    margin-bottom: 50px;
+    font-size: 60px;
+    font-family: "DM Serif Display", sans-serif;
+}
+
+.middle-section {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around; 
+}
+
+.middle-section h3 {
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.snappy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.horizontal-line2 {
+    height: 2px;
+    width: 200px;
+    background-color: hsl(270, 9%, 17%, 0.5);
+    align-self: start;
+    margin-bottom: 80px;
+}
+
+
+.section-3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.small-box {
+    background-color:  hsl(256, 26%, 20%);
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    width: 80%;
+    line-height: 1;
+    align-items: center;
+    background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right ;
+
+}
+
+.small-box h1 {
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    max-width: 530px;
+}
+
+.small-box .btn {
+    width: 200px;
+    font-family: "karla", sans-serif;
+    font-size: 16px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 10rem;
+    background-image: url(images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 30px;
+}
+
+.social-media img:hover {
+    cursor: pointer;
+    fill: blue;
+}
+
+.footer-horizontal-line {
+    height: 2px;
+    width: 90%;
+    background-color:  hsl(256, 26%, 20%, 0.5);
+    margin: 40px
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom:50px;
+    font-family: "karla", sans-serif;
+    font-size: 16px;
+    color:  hsl(256, 26%, 20%);
+    font-weight: 600;
+}
+
+.cols{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cols p:nth-of-type(1) {
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.cols p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.mobile-side-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    height: 100vh;
+    display: none;
+    z-index: 999;
+    background-color:  hsl(256, 26%, 20%);
+    background-image:url(images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-position:bottom;
+}
+
+
+.show-mobile {
+    display: none;
+}
+
+
+@media(max-width: 1250px){
+    .section-1 h1 {
+        font-family: "DM Serif Display", sans-serif;
+        font-size: 60px;
+        font-weight: 400;  
+        line-height: 0.8;
+        margin-top: 60px;
+    }
+
+    .small-box h1 {
+        font-family: "DM Serif Display", sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        max-width: 350px;
+    }
+
+    .intro-img {
+        max-width: 400px
+    }
+}
+
+@media(max-width: 900px){
+   
+    .section-1 h1 {
+        font-size: 45px;
+        
+    }
+
+    .small-box h1 {
+        font-size: 40px;
+    }
+
+    .section-2 h1 {
+        font-size: 50px;
+       
+    }
+
+    .section-2 img {
+        width: 70px;
+    }
+    .section-2 p {
+        font-size: 16px;
+    }
+    .section-2 h3 {
+        font-size: 25px;
+    }
+    
+
+    .intro-img {
+        max-width: 350px;
+    }
+
+    .small-box {
+        padding: 70px;
+        gap: 80px;
+    }
+}
+
+@media(max-width: 580px){
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .section-1 {
+        flex-direction: column-reverse;
+        background-image: url(images/bg-pattern-intro-right-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    
+    .left-side {
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .right-side {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        max-width: 600px;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+
+    .section-1 h1 {
+        font-size: 45px;
+    }
+
+    .small-box h1 {
+        font-size: 40px;
+    }
+
+    .section-2 h1 {
+        font-size: 50px;
+       
+    }
+
+    .section-2 img {
+        width: 70px;
+    }
+
+    .section-2 p {
+        font-size: 16px;
+    }
+
+    .section-2 h3 {
+        font-size: 25px;
+    }
+    
+    .intro-img {
+        max-width: 100%;
+    }
+
+    .small-box {
+        padding: 70px;
+        gap: 80px;
+    }
+    
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+    }
+
+    .horizontal-line2 {
+        align-self: center;
+        margin-bottom: 80px;
+    }
+    
+    .section-2 img {
+        width: 80px;
+        align-self: center;
+    }
+    
+    .section-2 p {
+        font-family: "karla", sans-serif;
+        font-weight: 500;
+        color: hsl(270, 9%, 17%);
+    }
+    
+    .section-2 h1 {
+        align-self: center;
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+    
+    .middle-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .small-box {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        width: 90%; 
+        background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: right ;
+    }
+
+    .footer-horizontal-line {
+        height: 2px;
+        width: 70%;
+        background-color:  hsl(256, 26%, 20%, 0.5);
+        margin: 40px
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hidden-mobile {
+        display: none;
+    }
+
+    .show-mobile {
+        display: flex;
+    }
+
+    #plans {
+        color: white;
+        border: solid white;
+    }
+
+}

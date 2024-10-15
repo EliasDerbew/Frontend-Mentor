@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: hsl(227, 12%, 61%);
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 100vh;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    z-index: 999;
+    display: none; 
+}
+
+.close-btn {
+    cursor: pointer;
+}
+
+.open li {
+    list-style: none;
+}
+
+.hamburger{
+    cursor: pointer;
+    display: none;
+    list-style-type: none;
+}
+
+.mobile-nav.active {
+    display: flex;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+    color: hsl(233, 12%, 13%);
+    padding-top: 4rem;
+    margin-bottom: 5rem
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+button {
+    height: 40px;
+    border: none;
+    border-radius: 1.25rem;
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    font-family:"Be Vietnam Pro", sans-serif;
+    font-size: 16px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 10rem;
+    padding: 0 100px;
+}
+
+.section-1 .left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section-1 .left-side h1 {
+    font-size: 3.5rem;
+    color: hsl(228, 39%, 23%);
+    line-height: 1;
+    font-weight: 800;
+}
+
+.section-1 .left-side p {
+    max-width: 350px;
+}
+
+.section-1 .left-side button {
+    align-self: start;
+}
+
+.section-2 {
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 10rem;
+    padding: 0 100px;
+}
+
+.section-2 .left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section-2 .left-side h1{
+
+    font-size: 40px;
+    color: hsl(228, 39%, 23%);
+    line-height: 1;
+}
+
+.section-2 .right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sub-topics {
+    display: flex;
+    gap: 20px;
+}
+
+.sub-topics h2{
+    color: hsl(228, 39%, 23%);
+    margin-bottom: 10px;
+}
+
+.nums {
+    background-color: hsl(12, 88%, 59%);
+    padding: 0 20px;
+    color: white;
+    border-radius: 2rem;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 10rem;
+}
+
+.section-3 h1{
+   color: hsl(228, 39%, 23%);
+   font-size: 40px;
+}
+
+.section-3 img{
+   width: 50px;
+   margin-bottom: 20px;
+}
+
+.slider-container {
+    width: 90%;
+}
+
+.testmonial {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.testmonial h3{
+    color: hsl(228, 39%, 23%);
+    margin-bottom: 20px;
+}
+
+.section-4 {
+    display: flex;
+    justify-content: space-around;
+    background-color:hsl(12, 88%, 59%);
+    color: white;
+    padding: 40px;  
+}
+
+.section-4 button{
+    background-color: white;
+    color:hsl(228, 39%, 23%);
+}
+
+
+footer {
+    background-color:hsl(233, 12%, 13%);
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    color: white;
+    line-height: 2.5;
+}
+
+.formobile {
+    display: flex;
+    gap: 40px;
+}
+
+.social-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer a{
+    color: white;
+}
+
+.footer-logo {
+    filter: brightness(0) invert(1);
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    height: 40px;
+    border: none;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    font-family:"Be Vietnam Pro", sans-serif;
+    margin-right: 10px
+}
+
+.input-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-copy p{
+    color: hsl(227, 12%, 61%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+@media(max-width: 1150px){
+    .section-1 .left-side h1 {
+        font-size: 3rem;
+    }
+    .sec1-img {
+        max-width: 350px;
+    }
+ 
+}
+
+@media(max-width: 869px){
+    .section-1 .left-side h1 {
+        font-size: 2rem;
+    }
+    .sec1-img {
+        max-width: 300px;
+    }
+
+    footer {
+        font-size: 12px
+    }
+ 
+}
+
+@media(max-width: 750px){
+    .section-1 {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .sec1-img {
+        max-width: 100%;
+    }
+
+    .section-1 .left-side {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .section-1 .left-side h1 {
+        font-size: 3rem;
+        color: hsl(228, 39%, 23%);
+        line-height: 1;
+        font-weight: 800;
+        align-self:center;
+    }
+    
+    .section-1 .left-side p {
+        max-width: 350px;
+        align-self: center;
+    }
+    
+    .section-1 .left-side button {
+        align-self: center;
+    }
+
+    .section-2 {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 0;
+        margin: 10px;
+        margin-bottom: 60px;
+    }
+
+    .section-4 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        font-size: 16px;  
+    }
+
+    .formobile {
+        display: flex;
+        gap: 40px;
+        padding: 0;
+    }
+    
+    .slider-container {
+        width: 90%;
+    }
+
+    .open li {
+        list-style: none;
+    }
+
+    .hamburger{
+        cursor: pointer;
+        display: block;
+        list-style: none;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .testmonial {
+        overflow-x: scroll;
+    }
+
+    .people {
+        min-width: 100%;
+        padding: 20px;
+    }
+
+}
+
+@media(max-width: 550px){
+    .section-1 {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 30px;
+        margin: 20px;
+    }
+
+    .sec1-img {
+        max-width: 70%;
+    }
+
+    .section-1 .left-side {
+        margin: 0px;
+    }
+    
+    .section-1 .left-side h1 {
+        font-size: 3rem;
+        color: hsl(228, 39%, 23%);
+        line-height: 1;
+        font-weight: 800;
+        align-self:center;
+    }
+    
+    .section-1 .left-side p {
+        max-width: 350px;
+        align-self: center;
+    }
+    
+    .section-1 .left-side button {
+        align-self: center;
+    }
+
+    .section-2 {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 0;
+        margin: 0 0px;
+        margin-bottom: 60px;
+    }
+
+    .section-2 .left-side {
+        margin:0 40px;
+    }
+
+    .section-2 .right-side {
+        margin:0 20px;
+    }
+
+    .sub-topics {
+        display: flex;
+        gap: 10px;
+    }
+
+    .section-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 10rem;
+        margin-left: 1rem;
+        max-width: 500px
+    }
+    
+    .section-3 h1{
+       color: hsl(228, 39%, 23%);
+       font-size: 40px;
+    }
+    
+    .section-3 img{
+       width: 50px;
+       margin-bottom: 20px;
+    }
+    
+    .slider-container {
+        width: 90%;
+    }
+    
+    .testmonial {
+        display: flex;
+        gap: 20px;
+        text-align: center;
+    }
+
+
+    .section-4 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        font-size: 16px;  
+    }
+
+    .formobile {
+        display: flex;
+        gap: 40px;
+        padding: 0;
+    }
+    
+    .slider-container {
+        width: 90%;
+    }
+
+    .open li {
+        list-style: none;
+    }
+
+    .hamburger{
+        cursor: pointer;
+        display: block;
+        list-style: none;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+    }
+
+    .testmonial {
+        overflow-x: scroll;
+    
+    }
+
+    .people {
+        min-width: 90%;
+        padding: 20px;
+    }
+
+}
+
+@media(max-width: 375px){
+    .section-1 {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 10px;
+        padding: 30px;
+        margin: 20px;
+        margin-bottom: 70px;
+    }
+
+    .sec1-img {
+        max-width: 70%;
+    }
+
+    .section-1 .left-side {
+        margin: 10px;
+    }
+    
+    .section-1 .left-side h1 {
+        font-size: 2rem;
+    }
+    
+    .section-1 .left-side p {
+        max-width: 350px;
+        align-self: center;
+    }
+    
+    .section-1 .left-side button {
+        align-self: center;
+    }
+
+    .section-2 {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 0;
+        margin: 0 0px;
+        margin-bottom: 60px;
+    }
+
+    .section-2 .left-side {
+        margin:0 40px;
+    }
+
+    .section-2 .right-side {
+        margin:0 20px;
+    }
+
+    .sub-topics {
+        display: flex;
+        gap: 10px;
+        margin: 20px;
+    }
+
+    .section-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 10rem;
+        margin-left: 1rem;
+        max-width: 400px
+    }
+    
+    .section-3 h1{
+       color: hsl(228, 39%, 23%);
+       font-size: 2rem;
+    }
+    
+    .section-3 img{
+       width: 50px;
+       margin-bottom: 20px;
+    }
+    
+    .slider-container {
+        width: 90%;
+    }
+    
+    .testmonial {
+        display: flex;
+        gap: 20px;
+        text-align: center;
+    }
+
+
+    .section-4 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        font-size: 16px;  
+    }
+
+    .formobile {
+        display: flex;
+        gap: 40px;
+        padding: 0;
+    }
+    
+    .slider-container {
+        width: 90%;
+    }
+
+    .open li {
+        list-style: none;
+    }
+
+    .hamburger{
+        cursor: pointer;
+        display: block;
+        list-style: none;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+    }
+
+    .testmonial {
+        overflow-x: scroll;
+    
+    }
+
+    .people {
+        min-width: 90%;
+        padding: 20px;
+    }
+
+}
